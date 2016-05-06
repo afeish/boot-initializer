@@ -114,13 +114,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <distributionManagement>
-        <repository>
-            <id>internal.repo</id>
-            <name>Temporary Staging Repository</name>
-            <url>file://${project.build.directory}/mvn-repo</url>
-        </repository>
-    </distributionManagement>
 
     <repositories>
         <repository>
@@ -136,6 +129,7 @@
                 <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
+
 
         <repository>
             <id>spring-snapshot</id>
@@ -189,6 +183,13 @@
         </pluginRepository>
     </pluginRepositories>
 
+    <distributionManagement>
+        <repository>
+            <id>internal.repo</id>
+            <name>Temporary Staging Repository</name>
+            <url>file://${project.build.directory}/mvn-repo</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
@@ -223,8 +224,6 @@
                     <includes>
                         <include>**/*</include>
                     </includes>
-                    <merge>true</merge>
-                    <!--<repositoryName>https://git.oschina.net/neocxf/jx-util.git</repositoryName>-->
                     <repositoryName>boot-initializer</repositoryName>
                     <repositoryOwner>neocxf</repositoryOwner>
                 </configuration>
@@ -238,6 +237,8 @@
                 </executions>
             </plugin>
         </plugins>
+
     </build>
+
 
 </project>
