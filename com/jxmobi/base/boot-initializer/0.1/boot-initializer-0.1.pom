@@ -18,7 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <github.global.userName>neocxf</github.global.userName>
-        <github.global.password>c45ed038f7266f9bb415c5d6925ef37f2eae474e</github.global.password>
+        <github.global.password>a52a481bc1da6eb5b6975ad19215fe2969be4aad</github.global.password>
     </properties>
 
     <dependencies>
@@ -29,8 +29,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
         <dependency>
