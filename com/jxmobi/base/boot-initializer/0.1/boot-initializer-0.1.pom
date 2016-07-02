@@ -18,7 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <github.global.userName>neocxf</github.global.userName>
-        <github.global.password>a52a481bc1da6eb5b6975ad19215fe2969be4aad</github.global.password>
+        <github.global.password>ee00400b6b4976d66c1ac59e9043ffc67f1f2fab</github.global.password>
     </properties>
 
     <dependencies>
@@ -68,6 +68,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
         </dependency>
 
         <dependency>
@@ -205,6 +210,7 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                    <proc>none</proc>
                 </configuration>
             </plugin>
 
